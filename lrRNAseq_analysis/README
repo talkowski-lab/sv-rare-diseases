@@ -1,0 +1,7 @@
+Analysis of Trio long-read RNA-seq for GREGoR
+
+# Steps:
+1. Annotation: LRAA-assembled gtfs are individually annotated, QCed, and intersected with rare and denovo variants using the snakemake pipeline
+2. Expression calculation: Expression count matrix was created using scripts/make_expr_mats.py
+3. De novo transcript annotation: Following the file scripts/trio_analysis.R
+4. Expression analysis (including MAZ and DMR expression figures): scripts/calculate_expression_outliers.R

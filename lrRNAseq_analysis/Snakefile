@@ -1,0 +1,8 @@
+include: "rules/common.smk"
+include: "rules/data_collect.smk"
+include: "rules/transcriptome_annot.smk"
+
+
+rule all:
+  input:
+    get_final_outputs()
